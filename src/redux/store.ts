@@ -1,11 +1,13 @@
 // redux/store.ts
 
-import { configureStore } from "@reduxjs/toolkit";
-import { combineReducers } from "redux";
-import customerNameReducer from "./customerName/reducer";
-import customerNameChangeLogReducer from "./customerNameChangeLog/reducer";
+import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux';
+import authReducer from './auth/reducer';
+import customerNameReducer from './customerName/reducer';
+import customerNameChangeLogReducer from './customerNameChangeLog/reducer';
 
 const rootReducer = combineReducers({
+  auth: authReducer,
   customerName: customerNameReducer,
   customerNameChangeLog: customerNameChangeLogReducer,
 });

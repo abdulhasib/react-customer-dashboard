@@ -15,12 +15,9 @@ const Header: React.FC = () => {
     border-n-6 ls:bg-n-8/90 lg:backdrop-vlue-sm -z-1"
     >
       <div className="flex items-center justify-center flex-row px-5 xl:px-10">
-        <a
-          className="flex items-center flex-row w-12 py-5 xl:mr-8 z-1"
-          href="#hero"
-        >
+        <Button type="link" to="/">
           <img src={undone} />
-        </a>
+        </Button>
 
         <nav
           className="fixed top-5 left-0 right-0 bottom-0
